@@ -2,28 +2,27 @@
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  //text-shadow: 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #0099ff, 0 0 40px #0066ff;
 
   a{
     text-decoration: none;
-    transition: all 2s;
-    color: #fff;
-    animation: neon1 1s ease-in-out infinite alternate;
+    transition: 1s all;
+    color: $font_color;
+    animation: neon 3s ease-in-out infinite alternate;
 
     &:hover{
-      color: #333333;
-      animation: none;
+      letter-spacing: 0.5px;
+      color: $white;
     }
   }
 }
 
 
 
-@keyframes neon1 {
+@keyframes neon{
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF;
+    text-shadow: 0 0 10px $white, 0 0 20px $white, 0 0 30px $white, 0 0 40px $neon_light, 0 0 70px $neon_light, 0 0 80px $neon_light;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF;
+    text-shadow: 0 0 5px $white, 0 0 10px $white, 0 0 15px $white, 0 0 20px $neon_light, 0 0 35px $neon_light, 0 0 40px $neon_light;
   }
 }

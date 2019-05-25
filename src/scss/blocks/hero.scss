@@ -1,0 +1,36 @@
+.hero{
+    height: 100vh;
+    
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    &__information{
+        padding: 50px 40px;
+        width: 40%;
+        border: 7px solid $font_color;
+        box-shadow: 0 0 2px $white, 0 0 4px $white, 0 0 10px $neon_light, 0 0 15px $neon_light;
+    }
+
+    &__title{
+        font-size: 40px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+    &__description{
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    &__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        overflow: hidden;
+        
+    }
+}
