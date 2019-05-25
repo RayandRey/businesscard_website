@@ -1,0 +1,29 @@
+.nav__logo{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  //text-shadow: 0 0 2px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #0099ff, 0 0 40px #0066ff;
+
+  a{
+    text-decoration: none;
+    transition: all 2s;
+    color: #fff;
+    animation: neon1 1s ease-in-out infinite alternate;
+
+    &:hover{
+      color: #333333;
+      animation: none;
+    }
+  }
+}
+
+
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF;
+  }
+}
