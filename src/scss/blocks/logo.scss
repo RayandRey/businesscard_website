@@ -7,11 +7,12 @@
     text-decoration: none;
     transition: 1s all;
     color: $font_color;
-    animation: neon 3s ease-in-out infinite alternate;
+    animation: neon 2s ease-in-out infinite alternate;
 
     &:hover{
       letter-spacing: 0.5px;
       color: $white;
+      animation: neon 1s ease-in-out infinite alternate;
     }
   }
 }
