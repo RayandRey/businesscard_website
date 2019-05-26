@@ -1,5 +1,22 @@
 .about{
-    &__content{
-        height: 800px;
+    margin: 150px 0 100px;
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75px;    
+        
+        img{
+            width: 50%;
+        }
     }
 }

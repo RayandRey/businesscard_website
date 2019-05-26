@@ -2,6 +2,7 @@
     text-align: center;
     padding: 45px 10% 50px;
     color: $section_color;
+    box-shadow: 0 0 2px $white, 0 0 4px $white, 0 0 10px $neon_light, 0 0 15px $neon_light;
     background: linear-gradient(110deg, $start_color, $font_color);
     text-shadow: 0 0 2px $white, 0 0 4px $neon_light, 0 0 6px $neon_light, 0 0 8px $neon_light;
 

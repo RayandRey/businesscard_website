@@ -18,6 +18,9 @@ h1, h2, h3, ul, li, p {
   margin: 0;
   padding: 0; }
 
+ul {
+  list-style: none; }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%; }
@@ -33,11 +36,10 @@ h1, h2, h3, ul, li, p {
   .nav__logo a {
     text-decoration: none;
     transition: 1s all;
-    color: #333333;
+    color: #ffffff;
     animation: neon 2s ease-in-out infinite alternate; }
     .nav__logo a:hover {
       letter-spacing: 0.5px;
-      color: #ffffff;
       animation: neon 1s ease-in-out infinite alternate; }
 
 @keyframes neon {
@@ -55,7 +57,6 @@ h1, h2, h3, ul, li, p {
   .nav__list {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     width: 50%; }
   .nav__item {
     text-decoration: none;
@@ -100,6 +101,7 @@ h1, h2, h3, ul, li, p {
   text-align: center;
   padding: 45px 10% 50px;
   color: #cccccc;
+  box-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 10px #ff1177, 0 0 15px #ff1177;
   background: linear-gradient(110deg, #0e0a0c, #333333);
   text-shadow: 0 0 2px #ffffff, 0 0 4px #ff1177, 0 0 6px #ff1177, 0 0 8px #ff1177; }
   .section__title {
@@ -114,5 +116,24 @@ h1, h2, h3, ul, li, p {
     letter-spacing: 1px;
     line-height: 1.2; }
 
-.about__content {
-  height: 800px; }
+.about {
+  margin: 150px 0 100px; }
+  .about__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .about__card {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 75px; }
+    .about__card img {
+      width: 50%; }
+
+.portfolio__content {
+  height: 500px; }
+
+.contacts__content {
+  height: 500px; }

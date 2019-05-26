@@ -21,6 +21,9 @@ h1, h2, h3, ul, li, p{
     padding: 0;
 }
 
+ul{
+    list-style: none;
+}
 
 @keyframes gradient{
     0%{
